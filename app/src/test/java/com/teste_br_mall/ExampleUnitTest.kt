@@ -1,4 +1,4 @@
-package com.example.teste_br_mall
+package com.teste_br_mall
 
 import org.junit.Test
 
