@@ -1,6 +1,6 @@
 ## APP
 
-![](https://i.imgur.com/uHN2Dtd.gif)
+![](https://i.imgur.com/4bgyDZ3s.gif)
 
 # teste_kotlin
 
