@@ -1,6 +1,10 @@
+## APP
+
+![](https://i.imgur.com/6PDLbW9.gif)
+
 # teste_kotlin
 
-Tentativa de aprendizado do kotlin
+Aprendendo kotlin
 
 ## TECS
 
