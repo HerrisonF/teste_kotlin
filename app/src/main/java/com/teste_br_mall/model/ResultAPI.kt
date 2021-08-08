@@ -4,5 +4,5 @@ import java.io.Serializable
 
 data class ResultAPI(
     val info: Info?,
-    val results: MutableList<Persona>
-): Serializable
+    val results: MutableList<Persona>,
+) : Serializable

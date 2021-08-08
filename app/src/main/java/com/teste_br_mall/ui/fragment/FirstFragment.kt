@@ -1,6 +1,7 @@
 package com.teste_br_mall.ui.fragment
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -42,6 +43,14 @@ class FirstFragment : Fragment(), ViewHome.View {
 
         recyclerView.layoutManager = LinearLayoutManager(context)
 
+        recyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
+            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                if (!recyclerView.canScrollVertically(1) && dy > 0) {
+                    presenter.requestAll()
+                }
+            }
+        })
+
         val dataSource = PersonaDataSource()
         presenter = PersonaPresenter(this, dataSource)
         presenter.requestAll()
@@ -55,7 +64,7 @@ class FirstFragment : Fragment(), ViewHome.View {
     }
 
     override fun showFailure(message: String) {
-        Toast.makeText(context, message, Toast.LENGTH_LONG).show()
+        Toast.makeText(vieww.context, message, Toast.LENGTH_LONG).show()
     }
 
     override fun hideProgressBar() {
@@ -63,8 +72,8 @@ class FirstFragment : Fragment(), ViewHome.View {
         t.visibility = View.INVISIBLE
     }
 
-    override fun showPersona(character: List<Persona>) {
-        customAdapter.differ.submitList(character.toList())
+    override fun showPersona(persona: MutableList<Persona>) {
+        customAdapter.differ.submitList(persona.toList())
     }
 
 }

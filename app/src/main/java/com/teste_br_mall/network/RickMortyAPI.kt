@@ -10,7 +10,7 @@ interface RickMortyAPI {
     @GET("/api/character")
     suspend fun getCharacterAPI (
         @Query("page")
-        page: Int? = null,
+        page: Int,
         @Query("id")
         id: Int? = null,
     ) : Response<ResultAPI>

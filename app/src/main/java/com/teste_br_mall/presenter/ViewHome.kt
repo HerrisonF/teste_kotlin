@@ -7,6 +7,6 @@ interface ViewHome {
         fun showProgressBar()
         fun showFailure(message: String)
         fun hideProgressBar()
-        fun showPersona(character: List<Persona>)
+        fun showPersona(persona: MutableList<Persona>)
     }
 }
