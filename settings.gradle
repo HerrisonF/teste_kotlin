@@ -1,2 +1,2 @@
-rootProject.name = "Teste_br_mall"
+rootProject.name = "Teste_kotlin"
 include ':app'

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Teste_br_mall.iml" filepath="$PROJECT_DIR$/.idea/modules/Teste_br_mall.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Teste_br_mall.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Teste_br_mall.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Teste_kotlin.iml" filepath="$PROJECT_DIR$/.idea/modules/Teste_kotlin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Teste_kotlin.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Teste_kotlin.app.iml" />
     </modules>
   </component>
 </project>
